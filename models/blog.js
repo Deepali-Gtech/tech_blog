@@ -13,10 +13,26 @@ Blog.init(
       primaryKey: true,
       autoIncrement: true
     },
-    blog_name: {
+    blog_title: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    blog_content: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
   },
   {
     sequelize,
