@@ -1,6 +1,7 @@
 // import models
 //const Blogwriter = require('./Product');
 const Blog = require('./Blog');
+const User = require('./User');
 
 
 // // Blog belongsTo Blogwriter
@@ -25,5 +26,5 @@ const Blog = require('./Blog');
 //   foreignKey: 'tag_id'
 // });
 module.exports = {
-  Blog
+  Blog, User
 };
