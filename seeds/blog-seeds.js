@@ -2,19 +2,29 @@ const { Blog } = require('../models');
 
 const blogData = [
   {
-    blog_name: 'Yoga',
+    title: 'Yoga',
+    content: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing?",
+    user_id: 1,
   },
   {
-    blog_name: 'Shorts',
+    title: 'Baseball',
+    content: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing?",
+    user_id: 2,
   },
   {
-    blog_name: 'Music',
+    title: 'Tennis',
+    content: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing?",
+    user_id: 1,
   },
   {
-    blog_name: 'Hats',
+    title: 'Food',
+    content: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing?",
+    user_id: 2,
   },
   {
-    blog_name: 'Shoes',
+    title: 'Tech',
+    content: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing?",
+    user_id: 1,
   },
 ];
 

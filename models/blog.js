@@ -7,17 +7,17 @@ class Blog extends Model {}
 Blog.init(
   {
      // define columns
-    blog_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    blog_title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    blog_content: {
+    content: {
       type: DataTypes.STRING,
       allowNull: false
     },

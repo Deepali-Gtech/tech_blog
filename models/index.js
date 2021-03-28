@@ -4,27 +4,15 @@ const Blog = require('./Blog');
 const User = require('./User');
 
 
-// // Blog belongsTo Blogwriter
-// Blog.belongsTo(Blogwriter, {
-//   foreignKey: 'blog_id'
-// });
+User.hasMany(Blog, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
 
-// // Categories have many Products
-// Blog.hasMany(Blogwriter, {
-//   foreignKey: 'blog_id',
-// });
+Blog.belongsTo(User, {
+  foreignKey: 'user_id'
+});
 
-// // Products belongToMany Tags (through ProductTag)
-// Product.belongsToMany(Tag, {
-//   through: ProductTag,
-//   foreignKey: 'product_id'
-// });
-
-// // Tags belongToMany Products (through ProductTag)
-// Tag.belongsToMany(Product, {
-//   through: ProductTag,
-//   foreignKey: 'tag_id'
-// });
 module.exports = {
   Blog, User
 };
