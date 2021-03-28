@@ -1,21 +1,20 @@
 {{!-- <div class="row align-center mb-5"> --}}
-      <div>
+      {{!-- <div>
         <h1>The Tech Blog</h1>
-      </div>
-  <br>
-  <div class="row align-center mb-5">
+      </div> --}}
+  
   {{#each blogs as |blog| }}
-  <div style="border-style: solid;">
-    <div class="row mt-4" style="border-style: solid;">
+  <div>
+    <div class="row mt-4" style="background-color: brown;">
       <div class="col-md-6">
         {{blog.title}}
       </div>
       
-      <div class="col-md-6" style="border-style: solid;">
-        Posted by {{blog.user.name}} on {{blog.date_created}}
+      <div class="col-md-6" >
+        Posted by {{blog.user.name}} on {{format_date blog.date_created}}
       </div>
     </div>
     <div>{{blog.content}}</div>
   </div>
+  <br>
   {{/each}}
-</div>

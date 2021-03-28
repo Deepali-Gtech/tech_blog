@@ -1,22 +1,21 @@
-<div class="row mt-4">
-  <div class="col-md-6">
-    <div class="col-md-4">
-      <a href="/newblog" class="btn btn-sm btn-danger">Create Blog</a>
-    </div>
+<a href="/newblog" class="btn btn-sm btn-success">Create Blog</a>
 
-    {{#if blogs.length}}
-    <div class="col-md-6 project-list">
-      <h3>Current Projects:</h3>
-
-      {{#each blogs as |blog|}}
-      <div class="row mb-2">
-        <div class="col-md-8">
-          <h4><a href="/blog?id={{blog.id}}">{{blog.title}}</a></h4>
-        </div>
+{{#each blogs as |blog|}}
+<div>
+  <a href="/blog?id={{blog.id}}">
+    <div class="row mt-4" style="background-color: brown;">
+      <div class="col-md-6">
+        {{blog.title}}
       </div>
-      {{/each}}
-    </div>
-    {{/if}}
-  </div>
 
-  <script src="./js/dashboard.js"></script>
+      <div class="col-md-6">
+        Posted by {{blog.user.name}} on {{format_date blog.date_created}}
+      </div>
+    </div>
+  </a>
+  <div>{{blog.content}}</div>
+</div>
+<br>
+{{/each}}
+
+<script src="./js/dashboard.js"></script>
