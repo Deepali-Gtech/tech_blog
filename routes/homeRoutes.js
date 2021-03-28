@@ -68,7 +68,7 @@ router.get('/newblog', withAuth, async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/updateblog', withAuth, async (req, res) => {
+router.get('/blog', withAuth, async (req, res) => {
   try {
     // If the user is already logged in, redirect the request to another route
   if (!req.session.logged_in) {
@@ -87,7 +87,7 @@ router.get('/updateblog', withAuth, async (req, res) => {
 
   const blog = blogData.get({ plain: true });
 
-    res.render('updateblog', {
+    res.render('blog', {
       blog,
       logged_in: req.session.logged_in
     });
