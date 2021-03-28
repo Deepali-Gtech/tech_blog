@@ -14,9 +14,14 @@ Link to the deployed website:
 ## Below are the screen shorts for website. 
 ![Website](./images/login_signup_pg.png)
 
+##
+
+![Website](./images/home.png)
+
+![Website](./images/create_blog.png)
 
 
-![Website](./public/assets/note_main.png)
+![Website](./images/post_comment.png)
 
 
 
