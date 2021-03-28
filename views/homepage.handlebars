@@ -1,10 +1,21 @@
-<div class="row align-center mb-5">
-  <h1>The Tech Blog</h1>
-
+{{!-- <div class="row align-center mb-5"> --}}
+      <div>
+        <h1>The Tech Blog</h1>
+      </div>
+  <br>
+  <div class="row align-center mb-5">
   {{#each blogs as |blog| }}
-    <p> {{blog.title}}</p>
-    <p> {{blog.content}}</p>
-    <p> {{blog.user.name}}</p>
-    <p> {{blog.date_created}}</p>
+  <div style="border-style: solid;">
+    <div class="row mt-4" style="border-style: solid;">
+      <div class="col-md-6">
+        {{blog.title}}
+      </div>
+      
+      <div class="col-md-6" style="border-style: solid;">
+        Posted by {{blog.user.name}} on {{blog.date_created}}
+      </div>
+    </div>
+    <div>{{blog.content}}</div>
+  </div>
   {{/each}}
 </div>
