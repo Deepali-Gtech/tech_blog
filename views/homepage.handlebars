@@ -5,15 +5,18 @@
   
   {{#each blogs as |blog| }}
   <div>
+    <a href="/comments?id={{blog.id}}">
     <div class="row mt-4" style="background-color: brown;">
+      
       <div class="col-md-6">
         {{blog.title}}
       </div>
-      
       <div class="col-md-6" >
         Posted by {{blog.user.name}} on {{format_date blog.date_created}}
       </div>
+      
     </div>
+    </a>
     <div>{{blog.content}}</div>
   </div>
   <br>
