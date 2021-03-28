@@ -1,7 +1,7 @@
 // import models
 //const Blogwriter = require('./Product');
-const Blog = require('./Blog');
-const User = require('./User');
+const Blog = require('./blog');
+const User = require('./user');
 
 
 User.hasMany(Blog, {
