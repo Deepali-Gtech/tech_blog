@@ -12,6 +12,24 @@
   <label>{{blog.content}}</label>
 </div>
 <br>
+
+{{#each comments as |comment|}}
+<div>
+  <div class="row mt-4" style="background-color: brown;">
+    <div class="col-md-6">
+      {{comment.content}}
+    </div>
+
+    <div class="col-md-6">
+      Posted by {{comment.user.name}} on {{format_date comment.date_created}}
+    </div>
+  </div>
+
+
+</div>
+<br>
+{{/each}}
+
 <form class="form new-project-form">
   <div class="form-group">
     <textarea class="form-input" id="content" name="content"></textarea>
