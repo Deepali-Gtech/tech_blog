@@ -2,7 +2,9 @@
   <h1>The Tech Blog</h1>
 
   {{#each blogs as |blog| }}
-    <p> {{blog.blog_id}}</p>
-    <p> {{blog.blog_name}}</p>
+    <p> {{blog.title}}</p>
+    <p> {{blog.content}}</p>
+    <p> {{blog.user.name}}</p>
+    <p> {{blog.date_created}}</p>
   {{/each}}
 </div>
