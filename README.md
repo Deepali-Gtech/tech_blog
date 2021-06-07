@@ -4,10 +4,15 @@
 # tech_blog
 This app build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
+# Use
+To run is app locally 
+* Run 'npm i' to install all the dependencies 
+* Run 'npm start' app will run on PORT 3001!
+
 
 # Deployment
 
-Link to the deployed website:
+Link to the deployed website: https://mysterious-stream-65434.herokuapp.com/
 
 
 
