@@ -5,7 +5,7 @@
 This app build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
 # Use
-To run is app locally 
+To run the app locally 
 * Run 'npm i' to install all the dependencies 
 * Run 'npm start' app will run on PORT 3001!
 
